@@ -33,4 +33,9 @@ void main() {
 
   var orange3 = orange1 + orange2;
   print(orange3.quatitiy);
+
+  // Menggunakan Named Constructor
+  var person1 = Person.withName("Eko Kurniawan");
+  var person2 = Person.withAddress("Subang");
+  var person3 = Person("Eko", "Jakarta");
 }
