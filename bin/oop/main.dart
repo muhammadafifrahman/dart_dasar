@@ -1,6 +1,7 @@
 import 'computer.dart';
 import 'database.dart';
 import 'immutable_point.dart';
+import 'manager.dart';
 import 'orange.dart';
 import 'person.dart';
 
@@ -52,4 +53,13 @@ void main() {
   var database2 = Database.get();
 
   print(database1 == database2);
+
+  // Mengakses Method Parent
+  var manager = Manager();
+  manager.name = 'Eko';
+  manager.sayHello('Budi');
+
+  var vp = VicePresident();
+  vp.name = 'Kurniawan';
+  vp.sayHello('Budi');
 }
