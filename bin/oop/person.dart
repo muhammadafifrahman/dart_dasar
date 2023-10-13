@@ -52,6 +52,14 @@ class Person {
   Person.withAddress(this.address) {}
 }
 
+// Redirecting Constructor
+// Person.withName(String name) : this(name, "");
+
+// Person.withAddress(String address) : this("", address);
+
+// Redirecting Named Constructor
+// Person.fromJakarta() : this.withAddress("Jakarta");
+
 // Extension Method
 extension GoodByeOnPerson on Person {
   void sayGoodBye(String paramName) {
