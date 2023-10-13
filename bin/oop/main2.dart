@@ -12,4 +12,11 @@ void main() {
 
   var vp = VicePresident('Kurniawan');
   // vp.sayHello('Budi');
+
+  // Menggunakan Class Object Method
+  var number = 100;
+  print(number.toString());
+
+  var person2 = Person();
+  print(person.toString());
 }
