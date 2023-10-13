@@ -4,6 +4,7 @@ import 'immutable_point.dart';
 import 'manager.dart';
 import 'orange.dart';
 import 'person.dart';
+import 'shape.dart';
 
 void main() {
 // Memanggil Method
@@ -62,4 +63,10 @@ void main() {
   var vp = VicePresident();
   vp.name = 'Kurniawan';
   vp.sayHello('Budi');
+
+  // Mengakses Super Keyword
+  var rectangle = Rectangle();
+
+  print(rectangle.getCorner());
+  print(rectangle.getParentCorner());
 }
