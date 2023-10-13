@@ -1,4 +1,5 @@
 import 'computer.dart';
+import 'immutable_point.dart';
 import 'orange.dart';
 import 'person.dart';
 
@@ -38,4 +39,10 @@ void main() {
   var person1 = Person.withName("Eko Kurniawan");
   var person2 = Person.withAddress("Subang");
   var person3 = Person("Eko", "Jakarta");
+
+  // Menggunakan Constact Constructor
+  var point1 = const ImmutablePoint(10, 10);
+  var point2 = const ImmutablePoint(10, 10);
+
+  print(point1 == point2);
 }
