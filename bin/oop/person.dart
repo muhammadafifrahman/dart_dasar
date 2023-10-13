@@ -22,6 +22,12 @@ class Person {
   void sayHello(String paramName) {
     print("Hello $paramName, My Name is $name");
   }
+
+  // Membuat Constructor
+  Person(String paramName, String paramAddress) {
+    name = paramName;
+    address = paramAddress;
+  }
 }
 
 // Extension Method
@@ -30,4 +36,3 @@ extension GoodByeOnPerson on Person {
     print('Good bye $paramName, from $name');
   }
 }
-

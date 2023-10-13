@@ -4,7 +4,12 @@ import 'person.dart';
 
 void main() {
 // Memanggil Method
-  var person = Person();
+  // var person = Person();
+  // person.name = "Eko Kurniawan";
+  // person.sayHello("Budi");
+
+  // Menggunakan Constructor
+  var person = Person("Eko Kurniawan", "Subang");
   person.name = "Eko Kurniawan";
   person.sayHello("Budi");
 
@@ -15,7 +20,7 @@ void main() {
   print(computer.getOperatingSystem());
 
   // Menggunakan Extension Method
-  var person2 = Person();
+  // var person = Person();
   person.name = "Dimas";
   person.sayGoodBye("Indra");
 
