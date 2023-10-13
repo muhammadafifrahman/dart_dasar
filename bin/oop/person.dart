@@ -23,3 +23,11 @@ class Person {
     print("Hello $paramName, My Name is $name");
   }
 }
+
+// Extension Method
+extension GoodByeOnPerson on Person {
+  void sayGoodBye(String paramName) {
+    print('Good bye $paramName, from $name');
+  }
+}
+

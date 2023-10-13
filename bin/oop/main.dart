@@ -12,4 +12,9 @@ void main() {
   computer.startup();
   computer.shutdown();
   print(computer.getOperatingSystem());
+
+  // Menggunakan Extension Method
+  var person2 = Person();
+  person.name = "Dimas";
+  person.sayGoodBye("Indra");
 }
