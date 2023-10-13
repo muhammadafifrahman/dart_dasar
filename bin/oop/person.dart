@@ -34,6 +34,12 @@ class Person {
     name = name; // field nama tidak berubah
     address = address; // field address tidak berubah
   }
+
+  // This Keyword
+  Person3(String name, String address) {
+    this.name = name;
+    this.address = address;
+  }
 }
 
 // Extension Method
