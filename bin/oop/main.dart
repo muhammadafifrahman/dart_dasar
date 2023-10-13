@@ -1,4 +1,5 @@
 import 'computer.dart';
+import 'database.dart';
 import 'immutable_point.dart';
 import 'orange.dart';
 import 'person.dart';
@@ -45,4 +46,10 @@ void main() {
   var point2 = const ImmutablePoint(10, 10);
 
   print(point1 == point2);
+
+  // Menggunakan Factory Constructor
+  var database1 = Database.get();
+  var database2 = Database.get();
+
+  print(database1 == database2);
 }
