@@ -28,6 +28,12 @@ class Person {
     name = paramName;
     address = paramAddress;
   }
+
+  // Variable Shadowing
+  Person2(String name, String address) {
+    name = name; // field nama tidak berubah
+    address = address; // field address tidak berubah
+  }
 }
 
 // Extension Method
