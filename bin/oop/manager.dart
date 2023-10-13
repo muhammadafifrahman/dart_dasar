@@ -6,4 +6,8 @@ class Manager {
   }
 }
 
-class VicePresident extends Manager {}
+class VicePresident extends Manager {
+  void sayHello(String name) {
+    print('Hello $name, my name is ${this.name}');
+  }
+}
