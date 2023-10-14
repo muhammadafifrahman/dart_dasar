@@ -6,6 +6,7 @@ import 'manager.dart';
 import 'orange.dart';
 import 'person.dart';
 import 'shape.dart';
+import 'location.dart';
 
 void main() {
 // Memanggil Method
@@ -76,4 +77,8 @@ void main() {
 
   print(category.id);
   print(category.name);
+
+  // Membuat Abstract Class
+  var city = City("Subang");
+  // var location = location(); // error
 }
