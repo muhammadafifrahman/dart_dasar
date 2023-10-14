@@ -1,3 +1,4 @@
+import 'category.dart';
 import 'computer.dart';
 import 'database.dart';
 import 'immutable_point.dart';
@@ -69,4 +70,10 @@ void main() {
 
   print(rectangle.getCorner());
   print(rectangle.getParentCorner());
+
+  // Import
+  var category = Category("1", "Gadget");
+
+  print(category.id);
+  print(category.name);
 }
