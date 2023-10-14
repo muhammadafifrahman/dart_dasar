@@ -1,3 +1,4 @@
+import 'animal.dart';
 import 'category.dart';
 import 'computer.dart';
 import 'database.dart';
@@ -80,5 +81,10 @@ void main() {
 
   // Membuat Abstract Class
   var city = City("Subang");
-  // var location = location(); // error
+  // var location = Location(); // error
+
+  // Menggunakan Abstract Method
+  Animal animal = Cat();
+  animal.name = "Puss";
+  animal.run();
 }
