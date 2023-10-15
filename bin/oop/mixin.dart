@@ -13,3 +13,14 @@ mixin Stoppable {
     print('Stop $name');
   }
 }
+
+// Membatasi Mixin
+abstract class Multimedia {}
+
+mixin Playable2 on Multimedia {
+  String? name;
+
+  void play() {
+    print('Play $name');
+  }
+}
