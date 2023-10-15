@@ -6,6 +6,7 @@ import 'immutable_point.dart';
 import 'manager.dart';
 import 'orange.dart';
 import 'person.dart';
+import 'product.dart';
 import 'shape.dart';
 import 'location.dart';
 
@@ -87,4 +88,10 @@ void main() {
   Animal animal = Cat();
   animal.name = "Puss";
   animal.run();
+
+  // Menggunakan Access Modifier
+  var product = Product();
+  product.id = "1";
+  product.name = "Mac Book Pro";
+  // product._quantity = 100; // error
 }
