@@ -7,6 +7,7 @@ import 'manager.dart';
 import 'orange.dart';
 import 'person.dart';
 import 'product.dart';
+import 'repository.dart';
 import 'shape.dart';
 import 'location.dart';
 
@@ -125,4 +126,14 @@ void main() {
   print(category4.hashCode);
 
   print(category3.hashCode == category4.hashCode);
+
+  // Menggunakan NoSuchMethod
+  dynamic repository = Repository("product");
+
+  repository.id("1234");
+
+  // Menggunakan NoSuchMethod yang ke dua
+  CategoryRepository categoryRepository = Repository("category");
+  categoryRepository.id("12345");
+  categoryRepository.name("Laptop");
 }
