@@ -1,4 +1,5 @@
 import 'employee.dart';
+import 'mixin.dart';
 
 void main() {
   // Polymorphism
@@ -16,3 +17,8 @@ void main() {
   sayHello(Manager("Eko"));
   sayHello(VicePresident("Eko"));
 }
+
+// Menggunakan Mixin
+class Video with Playable, Stoppable {}
+
+class Audio with Playable, Stoppable {}
