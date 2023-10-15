@@ -8,6 +8,10 @@ class Car {
   }
 }
 
+abstract class HasBrand {
+  String getBrand();
+}
+
 // Implement Interface
 class Avanza implements Car {
   String name = "Avanza";
@@ -20,3 +24,10 @@ class Avanza implements Car {
     return 4;
   }
 }
+
+// Multiple Interface
+// class Avanza2 implements Car, HasBrand {
+//   String name = "Avanza";
+
+//   String getBrand() => "Toyota";
+// }
