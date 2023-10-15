@@ -94,4 +94,9 @@ void main() {
   product.id = "1";
   product.name = "Mac Book Pro";
   // product._quantity = 100; // error
+
+  // Menggunakan ToString Method
+  var product2 = Product();
+  print(product2.toString());
+  print(product2);
 }
