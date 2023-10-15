@@ -116,4 +116,13 @@ void main() {
   //     return false;
   //   }
   // }
+
+  // Menggunakan HashCode
+  var category3 = Category("1", "Laptop");
+  print(category3.hashCode);
+
+  var category4 = Category("1", "Laptop");
+  print(category4.hashCode);
+
+  print(category3.hashCode == category4.hashCode);
 }
