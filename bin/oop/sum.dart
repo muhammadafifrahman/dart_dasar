@@ -10,3 +10,14 @@ class Sum {
 // Typedef
 typedef Total = Sum;
 typedef Jumlah = Sum;
+
+// Typedef untuk Function
+typedef Filter = String Function(String);
+
+void sayHello(String name, Filter filter) {
+  print('Hello ${filter(name)}');
+}
+
+void main() {
+  sayHello('Eko', (name) => name.toUpperCase());
+}
