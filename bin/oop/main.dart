@@ -1,6 +1,7 @@
 import 'animal.dart';
 import 'category.dart';
 import 'computer.dart';
+import 'customer2.dart';
 import 'database.dart';
 import 'immutable_point.dart';
 import 'manager.dart';
@@ -150,4 +151,12 @@ void main() {
 
   var total2 = Total(10, 10);
   print(total2());
+
+  // Menggunakan Enum
+  var customer = Customer("Eko", CustomerLevel.vip);
+
+  print(customer.name);
+  print(customer.level);
+
+  print(CustomerLevel.values);
 }
