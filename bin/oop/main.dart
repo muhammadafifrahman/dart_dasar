@@ -10,6 +10,7 @@ import 'product.dart';
 import 'repository.dart';
 import 'shape.dart';
 import 'location.dart';
+import 'sum.dart';
 
 void main() {
 // Memanggil Method
@@ -136,4 +137,10 @@ void main() {
   CategoryRepository categoryRepository = Repository("category");
   categoryRepository.id("12345");
   categoryRepository.name("Laptop");
+
+  // Menggunakan callable class
+  var sum = Sum(10, 10);
+
+  var total = sum();
+  print(total);
 }
