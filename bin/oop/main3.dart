@@ -33,4 +33,9 @@ void main() {
 
   var audio = Audio();
   audio.play();
+
+  // Error
+  var list = ["Eko", "Kurniawan", "Khannedy"];
+
+  print(list[10]);
 }
