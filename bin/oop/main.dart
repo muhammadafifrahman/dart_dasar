@@ -143,4 +143,11 @@ void main() {
 
   var total = sum();
   print(total);
+
+  // Menggunakan typedef
+  var jumlah = Jumlah(10, 10);
+  print(jumlah());
+
+  var total2 = Total(10, 10);
+  print(total2());
 }
